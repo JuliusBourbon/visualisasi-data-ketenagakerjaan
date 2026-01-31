@@ -209,34 +209,64 @@ with st.container(border=True):
             # Gunakan tahun dari filter demografi di atas atau default 2023
             df_edu = df_pendidikan[df_pendidikan['Tahun'] == filter_tahun_demo].copy()
             
-            # Multiselect Provinsi (dimasukkan dalam expander agar hemat tempat)
+            # Multiselect Provinsi
             with st.expander("Filter Provinsi", expanded=False):
                 all_provs = sorted(df_edu['Provinsi'].unique().tolist())
-                sel_provs = st.multiselect("Pilih:", all_provs, default=all_provs[:10], key="ms_prov") # Default top 10 agar grafik tidak penuh
+                sel_provs = st.multiselect("Pilih:", all_provs, default=all_provs[:10], key="ms_prov")
             
             if not df_edu.empty:
                 target_provs = sel_provs if sel_provs else all_provs
                 df_viz = df_edu[df_edu['Provinsi'].isin(target_provs)].copy()
+                
+                # --- PERUBAHAN 1: KONVERSI NILAI KE JUTA RUPIAH ---
+                # Kita bagi nilai asli dengan 1 juta agar Plotly menganggapnya angka kecil (misal: 2.5 bukan 2,500,000)
+                df_viz[edu_1] = df_viz[edu_1] / 1_000_000
+                df_viz[edu_2] = df_viz[edu_2] / 1_000_000
+                # --------------------------------------------------
+
                 df_viz['Gap'] = df_viz[edu_2] - df_viz[edu_1]
                 df_viz = df_viz.sort_values('Gap')
 
                 fig_gap = go.Figure()
-                # Garis
+                
+                # Garis (Dumbbell line)
                 for i in range(len(df_viz)):
                     fig_gap.add_shape(type='line',
                                     x0=df_viz.iloc[i][edu_1], y0=df_viz.iloc[i]['Provinsi'],
                                     x1=df_viz.iloc[i][edu_2], y1=df_viz.iloc[i]['Provinsi'],
                                     line=dict(color='lightgrey', width=2))
-                # Marker
-                fig_gap.add_trace(go.Scatter(x=df_viz[edu_1], y=df_viz['Provinsi'], mode='markers', name=edu_labels[edu_1], marker=dict(color="#FF0000", size=8)))
-                fig_gap.add_trace(go.Scatter(x=df_viz[edu_2], y=df_viz['Provinsi'], mode='markers', name=edu_labels[edu_2], marker=dict(color="#FFAE00", size=8)))
                 
-                # Tinggi dinamis berdasarkan jumlah data
+                # Marker (Titik)
+                # Kita tambahkan hovertemplate agar saat ditunjuk muncul angka "2.5 Jt"
+                fig_gap.add_trace(go.Scatter(
+                    x=df_viz[edu_1], y=df_viz['Provinsi'], 
+                    mode='markers', name=edu_labels[edu_1], 
+                    marker=dict(color="#FF0000", size=8),
+                    hovertemplate='%{x:.2f} Jt<extra></extra>' # Format hover
+                ))
+                fig_gap.add_trace(go.Scatter(
+                    x=df_viz[edu_2], y=df_viz['Provinsi'], 
+                    mode='markers', name=edu_labels[edu_2], 
+                    marker=dict(color="#FFAE00", size=8),
+                    hovertemplate='%{x:.2f} Jt<extra></extra>' # Format hover
+                ))
+                
                 h_dynamic = max(350, len(df_viz) * 25)
-                fig_gap.update_layout(height=h_dynamic, margin=dict(l=0,r=0,t=10,b=0), legend=dict(orientation="h", y=1.1))
+                
+                # --- PERUBAHAN 2: UPDATE LAYOUT SUMBU X ---
+                fig_gap.update_layout(
+                    height=h_dynamic, 
+                    margin=dict(l=0,r=0,t=10,b=0), 
+                    legend=dict(orientation="h", y=1.1),
+                    xaxis=dict(
+                        ticksuffix=" Jt",  # Menambahkan tulisan " Jt" di belakang angka
+                        tickformat=".1f"   # Menampilkan 1 angka di belakang koma (Opsional)
+                    )
+                )
+                # ------------------------------------------
+                
                 st.plotly_chart(fig_gap, use_container_width=True)
 
-    # --- KOLOM 2: ANALISIS SEKTORAL ---
     with col_sect:
         st.subheader("**Perbandingan Upah Berdasarkan Sektor**")
         
@@ -254,9 +284,17 @@ with st.container(border=True):
             # Gunakan data tahun terbaru (2023)
             df_sect = df_lapangan[df_lapangan['Tahun'] == 2023].copy()
 
+            # --- PERUBAHAN 1: KONVERSI KE JUTA RUPIAH ---
+            # Kita konversi semua kolom sektor ke satuan Juta agar konsisten
+            for col in sektor_options:
+                if col in df_sect.columns:
+                    df_sect[col] = df_sect[col] / 1_000_000
+            # ---------------------------------------------
+
             if filter_prov == "Semua Provinsi (Top 10)":
                 # Menampilkan 10 Provinsi tertinggi berdasarkan sektor yang dipilih
                 df_show = df_sect.sort_values(filter_sektor, ascending=False).head(10)
+                
                 fig_sect = px.bar(
                     df_show, 
                     x=filter_sektor, 
@@ -265,9 +303,17 @@ with st.container(border=True):
                     title=f"Top 10 Provinsi - Upah Sektor {filter_sektor}",
                     color=filter_sektor,
                     color_continuous_scale='Reds',
-                    labels={filter_sektor: 'Rata-rata Upah (Rp)'}
+                    labels={filter_sektor: 'Rata-rata Upah (Juta Rp)'}
                 )
-                fig_sect.update_layout(yaxis=dict(autorange="reversed"))
+                
+                # --- PERUBAHAN 2: FORMAT SUMBU X (HORIZONTAL) ---
+                fig_sect.update_layout(
+                    xaxis=dict(ticksuffix=" Jt", tickformat=".1f"), # Tambah suffix Jt
+                    yaxis=dict(autorange="reversed")
+                )
+                # Format Hover
+                fig_sect.update_traces(hovertemplate='%{x:.2f} Jt<extra></extra>')
+                
             else:
                 # Menampilkan perbandingan semua sektor di provinsi tertentu
                 df_prov_only = df_sect[df_sect['Provinsi'] == filter_prov]
@@ -286,9 +332,20 @@ with st.container(border=True):
                     x='Sektor', 
                     y='Upah',
                     title=f"Perbandingan Upah di {filter_prov}",
-                    text_auto='.2s'
+                    # text_auto='.2s' # Kita ganti text_auto dengan texttemplate agar bisa custom "Jt"
                 )
-                fig_sect.update_traces(marker_color=colors)
+                
+                # --- PERUBAHAN 3: FORMAT TEXT & HOVER ---
+                fig_sect.update_traces(
+                    marker_color=colors,
+                    texttemplate='%{y:.2f} Jt', # Menampilkan teks "2.50 Jt" di atas batang
+                    hovertemplate='%{y:.2f} Jt<extra></extra>'
+                )
+                
+                # --- PERUBAHAN 4: FORMAT SUMBU Y (VERTIKAL) ---
+                fig_sect.update_layout(
+                    yaxis=dict(ticksuffix=" Jt", tickformat=".1f") # Tambah suffix Jt di sumbu Y
+                )
             
             fig_sect.update_layout(height=412, margin=dict(l=0, r=0, t=40, b=0))
             st.plotly_chart(fig_sect, use_container_width=True)
