@@ -103,9 +103,12 @@ df_makro, df_umur, df_lapangan, df_pendidikan = load_data()
 # BARIS 1: TINJAUAN MAKRO EKONOMI (METRIK)
 # ==========================================
 with st.container(border=True):
-    col_h1, col_f1 = st.columns([3, 1])
+    col_h1, col_f1 = st.columns([3, 1], vertical_alignment="center")
     with col_h1:
+        st.markdown("")
         st.markdown(f"### {statsvg} Tinjauan Makro Ekonomi (KPI)", unsafe_allow_html=True)
+        st.markdown("")
+        st.markdown("")
     with col_f1:
         filter_tahun_makro = st.slider("Tahun Laporan:", 2019, 2023, 2023, key="slider_makro")
 
@@ -119,7 +122,7 @@ with st.container(border=True):
         
         m1, m2, m3 = st.columns(3)
         m1.metric("TPT (Agustus)", f"{val_tpt}%", f"{delta_tpt:.2f}%", delta_color="inverse")
-        m2.metric("Rata-rata Upah Nasional", f"Rp {curr_gaji/1000000:.2f} Juta", "per bulan")
+        m2.metric("Rata-rata Upah Nasional", f"Rp {curr_gaji:,.0f}".replace(",", "."), "per bulan")
         m3.metric("Status Data", f"Tahun {filter_tahun_makro}", "Data Tahunan")
 
 
@@ -133,7 +136,7 @@ with st.container(border=True):
 
     # --- KOLOM 1: TREN PENGANGGURAN ---
     with col_trend:
-        st.subheader("**Tren Tingkat Pengangguran Terbuka (TPT)**")
+        st.subheader("**Tren Tingkat Pengangguran**")
         if not df_makro.empty:
             df_trend = df_makro[df_makro['Status'] == 'Pengangguran'].sort_values(['Tahun', 'Bulan'])
             df_trend['Waktu'] = df_trend['Tahun'].astype(str) + " - " + df_trend['Bulan']
@@ -178,7 +181,7 @@ with st.container(border=True):
 # BARIS 3: SISA INFORMASI (PENDIDIKAN & SEKTOR)
 # ==========================================
 with st.container(border=True):
-    st.markdown(f"### {moneysvg} Analisis Upah: Pendidikan dan Sektoral", unsafe_allow_html=True)
+    st.markdown(f"### {moneysvg} Analisis Upah Berdasarkan Pendidikan dan Sektoral", unsafe_allow_html=True)
     
     col_edu, col_sect = st.columns(2)
 
@@ -217,8 +220,8 @@ with st.container(border=True):
                                     x1=df_viz.iloc[i][edu_2], y1=df_viz.iloc[i]['Provinsi'],
                                     line=dict(color='lightgrey', width=2))
                 # Marker
-                fig_gap.add_trace(go.Scatter(x=df_viz[edu_1], y=df_viz['Provinsi'], mode='markers', name=edu_labels[edu_1], marker=dict(color='#FFA500', size=8)))
-                fig_gap.add_trace(go.Scatter(x=df_viz[edu_2], y=df_viz['Provinsi'], mode='markers', name=edu_labels[edu_2], marker=dict(color='#000080', size=8)))
+                fig_gap.add_trace(go.Scatter(x=df_viz[edu_1], y=df_viz['Provinsi'], mode='markers', name=edu_labels[edu_1], marker=dict(color="#FF0000", size=8)))
+                fig_gap.add_trace(go.Scatter(x=df_viz[edu_2], y=df_viz['Provinsi'], mode='markers', name=edu_labels[edu_2], marker=dict(color="#FFAE00", size=8)))
                 
                 # Tinggi dinamis berdasarkan jumlah data
                 h_dynamic = max(350, len(df_viz) * 25)
@@ -227,7 +230,7 @@ with st.container(border=True):
 
     # --- KOLOM 2: ANALISIS SEKTORAL ---
     with col_sect:
-        st.subheader("**Komparasi Upah Sektoral**")
+        st.subheader("**Perbandingan Upah Berdasarkan Sektor**")
         
         # Penataan Filter di dalam kolom sektoral
         c_sec_f1, c_sec_f2 = st.columns(2)
