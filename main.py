@@ -21,31 +21,39 @@ st.set_page_config(
 # CSS Custom untuk Tampilan "Card" yang Elegan
 st.markdown("""
     <style>
-        .stApp { background-color: #F0F2F6; }
+        /* Memaksa background aplikasi */
+        .stApp {
+            background-color: #F0F2F6 !important;
+        }
         
-        /* Container Styling */
-        div[data-testid="stVerticalBlockBorderWrapper"] {
-            background-color: #FFFFFF;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            border: 1px solid #E0E0E0;
-            margin-bottom: 20px;
+        /* Container Styling - Menggunakan selector yang lebih agresif */
+        [data-testid="stVerticalBlockBorderWrapper"] {
+            background-color: #FFFFFF !important;
+            border-radius: 12px !important;
+            padding: 20px !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+            border: 1px solid #E0E0E0 !important;
+            margin-bottom: 20px !important;
         }
 
         /* Styling Headers */
-        h3 {
+        h1, h2, h3 {
             margin-top: 0 !important;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eee;
-            font-weight: 600;
-            color: #333;
+            padding-bottom: 10px !important;
+            border-bottom: 1px solid #eee !important;
+            font-weight: 600 !important;
+            color: #333333 !important;
         }
         
         /* Metric Value */
-        div[data-testid="stMetricValue"] {
-            font-size: 24px;
-            color: #007BFF;
+        [data-testid="stMetricValue"] {
+            font-size: 24px !important;
+            color: #007BFF !important;
+        }
+        
+        /* Fix tambahan untuk label metric agar kontras */
+        [data-testid="stMetricLabel"] {
+            color: #555555 !important;
         }
     </style>
 """, unsafe_allow_html=True)
