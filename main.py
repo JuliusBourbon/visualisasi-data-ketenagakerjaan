@@ -8,9 +8,6 @@ statsvg = """<svg width="48" height="48" viewBox="0 0 94 110" fill="#FF4E4C" xml
 peoplesvg = """<svg width="48" height="48" viewBox="0 0 89 115" fill="#FF4E4C" xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round"><path d="M62.8002 18.54C62.8002 21.11 62.0003 23.78 60.4003 26.54C60.1103 27.03 59.8203 27.5 59.5103 27.95C59.4003 28.11 59.2902 28.27 59.1802 28.42C57.8502 30.24 56.3403 31.64 54.6403 32.62C52.3903 33.92 50.4702 34.11 48.8702 33.2C47.2702 32.29 46.4702 30.54 46.4702 27.97C46.4702 26.16 46.8602 24.31 47.6602 22.41C47.9802 21.6 48.3902 20.79 48.8702 19.96C50.4702 17.21 52.3903 15.1801 54.6403 13.8801C56.6503 12.7201 58.4003 12.45 59.8903 13.06L60.4003 13.31C62.0003 14.22 62.8002 15.96 62.8002 18.54Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M86.9801 44.86C86.9801 46.18 86.6101 47.4899 85.8601 48.7799C85.1101 50.0799 84.1601 51.05 83.0001 51.72C81.8501 52.39 80.9001 52.51 80.1501 52.08L66.8801 44.5199V95.81C66.8801 97.14 66.4901 98.47 65.7101 99.82C64.9201 101.17 63.96 102.18 62.8 102.85C61.64 103.52 60.6701 103.63 59.8901 103.18C59.1101 102.74 58.7201 101.85 58.7201 100.52V77.1L50.55 81.82V105.24C50.55 106.56 50.1601 107.9 49.3801 109.25C48.6001 110.6 47.6301 111.61 46.4701 112.28C45.3101 112.94 44.35 113.06 43.56 112.61C42.78 112.16 42.3901 111.28 42.3901 109.95V52.69C38.1301 53.85 34.4701 53.7 31.3901 52.23L30.93 52C30.09 51.56 29.3 51.01 28.56 50.37C24.99 47.28 22.86 42.65 22.18 36.48C22.05 35.47 22.3901 34.36 23.2001 33.14C23.2901 33 23.3901 32.87 23.4801 32.74C24.2401 31.72 25.09 30.94 26.06 30.38C27.15 29.75 28.1 29.53 28.92 29.73C29.07 29.77 29.2201 29.82 29.3501 29.89H29.3801C29.5001 29.97 29.6101 30.05 29.7101 30.14C30.0501 30.47 30.2601 30.9699 30.3501 31.6499C31.1001 36.8399 33.21 40.31 36.67 42.05C39.52 43.49 42.9301 43.34 46.8801 41.6C47.7401 41.23 48.6201 40.78 49.5301 40.25L53.2101 38.13L59.7401 34.36C61.7801 33.18 63.6801 32.51 65.4501 32.35C65.6301 32.33 65.8101 32.32 65.9901 32.32C67.2801 32.26 68.4701 32.49 69.5701 32.98L70.2501 33.32L85.8601 42.23C86.6101 42.65 86.9801 43.53 86.9801 44.86Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M43.5601 112.61L23.5601 102.61C22.7801 102.16 22.3901 101.28 22.3901 99.95V47.73L30.9301 52L31.3901 52.23C34.4701 53.7 38.1301 53.8499 42.3901 52.6899V109.95C42.3901 111.28 42.7801 112.16 43.5601 112.61Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M69.5699 32.98C68.4699 32.49 67.28 32.2599 65.99 32.3199C65.81 32.3199 65.63 32.33 65.45 32.35C63.68 32.51 61.78 33.18 59.74 34.36L53.21 38.13L49.53 40.25C48.62 40.78 47.74 41.23 46.88 41.6C42.93 43.34 39.5199 43.4899 36.6699 42.0499C33.2099 40.3099 31.1 36.8399 30.35 31.6499C30.26 30.9699 30.05 30.47 29.71 30.14L35.77 26.6499L48.87 33.2C50.47 34.11 52.39 33.92 54.64 32.62C56.34 31.64 57.8499 30.2399 59.1799 28.4199C59.2899 28.2699 59.4 28.11 59.51 27.95L69.5699 32.98Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M59.8901 103.18L50.55 98.51V81.8199L58.7201 77.1V100.52C58.7201 101.85 59.1101 102.74 59.8901 103.18Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M30.93 52L22.3901 47.73L11.5201 42.2899L11.4401 42.25C10.4201 41.77 9.46005 41.14 8.56005 40.37C4.99005 37.28 2.86004 32.65 2.18004 26.48C2.05004 25.47 2.39006 24.36 3.20006 23.14C4.02006 21.93 4.97005 21.01 6.06005 20.38C7.15005 19.75 8.10003 19.53 8.92003 19.73C9.09003 19.77 9.24012 19.8299 9.38012 19.8999L29.3501 29.89C29.2201 29.82 29.07 29.77 28.92 29.73C28.1 29.53 27.15 29.75 26.06 30.38C25.09 30.94 24.2401 31.72 23.4801 32.74C23.3901 32.87 23.2901 33 23.2001 33.14C22.3901 34.36 22.05 35.47 22.18 36.48C22.86 42.65 24.99 47.28 28.56 50.37C29.3 51.01 30.09 51.56 30.93 52Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M80.1501 52.08L66.8801 45.45" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M59.8903 13.0599C58.4003 12.4499 56.6503 12.72 54.6403 13.88C52.3903 15.18 50.4702 17.21 48.8702 19.96C48.3902 20.79 47.9802 21.5999 47.6602 22.4099C46.8602 24.3099 46.4702 26.16 46.4702 27.97C46.4702 30.54 47.2702 32.29 48.8702 33.2L35.7703 26.6499L29.3802 23.45L28.8702 23.2C27.2702 22.29 26.4702 20.54 26.4702 17.97C26.4702 15.4 27.2702 12.72 28.8702 9.95997C30.4702 7.20997 32.3903 5.18002 34.6403 3.88002C36.8803 2.59002 38.8003 2.39995 40.4003 3.30995L59.8903 13.0599Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M29.3801 29.8999L29.3501 29.89" stroke="#0B0B0F" stroke-linejoin="round"/></svg>"""
 moneysvg = """<svg width="48" height="48" viewBox="0 0 69 116" fill="#FF4E4C" xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round"><path d="M40.3301 112.91L20.3301 102.91C19.4101 102.38 18.9502 101.34 18.9502 99.77V99.02L24.6902 101.89L27.3101 103.19L28.2002 103.64C28.6002 103.82 29.0202 103.97 29.4502 104.08C32.1802 104.81 35.3402 104.59 38.9502 103.43V109.77C38.9502 111.34 39.4101 112.38 40.3301 112.91Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M59.6096 53.9801C56.9496 52.8501 53.5096 52.8001 49.2996 53.8401C48.1496 54.1301 47.0696 54.3801 46.0496 54.6001C41.8096 55.5201 38.7296 55.8301 36.7896 55.5401C34.3796 55.1801 33.1797 53.4801 33.1797 50.4501C33.1797 48.0801 33.8996 45.6401 35.3496 43.1201C37.0496 43.1701 38.5496 43.4901 39.8496 44.0901L40.4097 44.3701L59.6096 53.9801Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M46.9102 12.6101C46.0402 12.2501 44.99 12.4301 43.76 13.1401C43.53 13.2801 43.3001 13.4201 43.0801 13.5901C42.8201 13.7701 42.5701 13.9801 42.3201 14.2001C41.5701 14.8801 40.9101 15.7201 40.3301 16.7101C39.4101 18.3001 38.9502 19.8801 38.9502 21.4401V27.5101L29.54 22.8101L18.9502 17.5101V11.4401C18.9502 9.88012 19.4101 8.3001 20.3301 6.7101C21.2601 5.1201 22.4 3.93011 23.76 3.14011C25.13 2.35011 26.2702 2.22011 27.1902 2.75011L46.9102 12.6101Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M58.8704 21.4801C58.1404 21.1501 57.3503 20.9101 56.5103 20.7601C54.2703 20.3501 51.6203 20.7501 48.5703 21.9601V16.3301L58.8704 21.4801Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M38.9507 27.51C35.4207 30.01 31.9806 33.89 28.6106 39.14C27.4606 40.94 26.5105 42.78 25.7505 44.66C24.2905 48.28 23.5605 52.06 23.5605 56C23.5605 56.25 23.5606 56.5 23.5706 56.74C23.6906 61.32 24.9706 64.54 27.4006 66.41C27.5806 66.55 27.7607 66.67 27.9607 66.78L8.63062 57.14L8.47046 57.06C8.08046 56.88 7.72063 56.66 7.40063 56.41C4.84063 54.44 3.56055 50.97 3.56055 46C3.56055 40.02 5.2406 34.4 8.6106 29.14C11.9806 23.89 15.4207 20.01 18.9507 17.51L29.5405 22.81L38.9507 27.51Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M28.9497 67.28L28.8496 67.23" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M56.5095 72.5802C56.5095 76.1702 55.3696 79.4802 53.0796 82.5002C50.7996 85.5202 48.0095 87.9802 44.7295 89.8802C41.6795 91.6402 39.1095 92.4102 37.0295 92.1802C34.9395 91.9602 33.2196 90.8602 31.8596 88.8902C31.6396 88.5402 31.3896 88.2602 31.0996 88.0502C30.9796 87.9602 30.8495 87.8802 30.7195 87.8102L19.5696 82.2302L19.2695 82.0802C20.8795 81.8002 22.6795 81.0602 24.7295 79.8802C28.0095 77.9802 30.7996 75.5202 33.0796 72.5002C34.1696 71.0802 34.9796 69.5902 35.5496 68.0302C37.3396 67.9102 39.3596 67.6002 41.5996 67.1202C42.7196 66.8902 43.7595 66.7002 44.7395 66.5302C49.3595 65.7602 52.4096 65.7302 53.8696 66.4502C55.6296 67.3202 56.5095 69.3602 56.5095 72.5802Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M66.1402 66.7501C66.1402 73.2801 64.4501 79.2301 61.0801 84.5701C57.7201 89.9201 53.5501 94.4501 48.5701 98.1501V104.22C48.5701 105.78 48.1102 107.36 47.1902 108.95C46.2702 110.54 45.13 111.73 43.76 112.52C42.4 113.3 41.2601 113.43 40.3301 112.91C39.4101 112.38 38.9502 111.34 38.9502 109.77V103.43C35.3402 104.59 32.1802 104.81 29.4502 104.08C29.0202 103.97 28.6002 103.82 28.2002 103.64L27.3101 103.19C26.5401 102.75 25.8202 102.19 25.1502 101.5C24.2902 100.61 23.5101 99.5301 22.8301 98.2401C22.2701 97.2701 22.2501 95.9301 22.7701 94.2001C23.3001 92.4701 24.2401 90.9001 25.6001 89.4601C26.7201 88.2601 27.8901 87.6201 29.0901 87.5201C29.2001 87.5101 29.2902 87.5101 29.3902 87.5101H29.4002C29.7202 87.5101 30.0201 87.5501 30.3001 87.6501H30.3101C30.4501 87.6901 30.59 87.7401 30.72 87.8101C30.85 87.8801 30.9801 87.96 31.1001 88.05C31.3901 88.26 31.6401 88.54 31.8601 88.89C33.2201 90.86 34.9401 91.9601 37.0301 92.1801C39.1101 92.4101 41.68 91.6401 44.73 89.8801C48.01 87.9801 50.8001 85.5201 53.0801 82.5001C55.3701 79.4801 56.51 76.1701 56.51 72.5801C56.51 69.3601 55.6302 67.3201 53.8702 66.4501C52.4102 65.7301 49.36 65.7601 44.74 66.5301C43.76 66.7001 42.7201 66.8901 41.6001 67.1201C39.3601 67.6001 37.3401 67.9101 35.5501 68.0301C32.7601 68.2201 30.5201 67.9501 28.8501 67.2301L27.9602 66.7801C27.7602 66.6701 27.5802 66.5501 27.4002 66.4101C24.9702 64.5401 23.6901 61.3201 23.5701 56.7401C23.5601 56.5001 23.5601 56.2501 23.5601 56.0001C23.5601 52.0601 24.29 48.2801 25.75 44.6601C26.51 42.7801 27.4601 40.9401 28.6101 39.1401C31.9801 33.8901 35.4202 30.0101 38.9502 27.5101V21.4401C38.9502 19.8801 39.4101 18.3001 40.3301 16.7101C40.9101 15.7201 41.5701 14.8801 42.3201 14.2001C42.5701 13.9801 42.8201 13.7701 43.0801 13.5901C43.3001 13.4201 43.53 13.2801 43.76 13.1401C44.99 12.4301 46.0402 12.2501 46.9102 12.6101L47.1902 12.7501C48.1102 13.2801 48.5701 14.3201 48.5701 15.8801V21.9601C51.6201 20.7501 54.27 20.3501 56.51 20.7601C57.35 20.9101 58.1402 21.1501 58.8702 21.4801L59.4002 21.74C60.4002 22.26 61.2801 22.9601 62.0501 23.8401C62.7701 24.6201 62.91 25.87 62.47 27.6C62.03 29.33 61.12 30.9101 59.76 32.3401C58.64 33.5401 57.4801 34.2301 56.2701 34.4201C55.0701 34.6101 53.9502 34.3601 52.9002 33.6701C51.8602 32.9901 50.64 32.7001 49.24 32.8201C47.83 32.9401 46.09 33.6101 44 34.8101C40.48 36.8501 37.7902 39.3001 35.9402 42.1501C35.7302 42.4701 35.5401 42.8001 35.3501 43.1201C33.9001 45.6401 33.1802 48.0801 33.1802 50.4501C33.1802 53.4801 34.3801 55.1801 36.7901 55.5401C38.7301 55.8301 41.8101 55.5201 46.0501 54.6001C47.0701 54.3801 48.1501 54.1301 49.3001 53.8401C53.5101 52.8001 56.9501 52.8501 59.6101 53.9801L60.4602 54.4001C60.9602 54.6701 61.4302 54.9901 61.8702 55.3501C64.7102 57.7001 66.1402 61.5101 66.1402 66.7501Z" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M60.6399 54.4901L60.46 54.4001" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M10.5696 77.7502L10.5195 77.7202" stroke="#0B0B0F" stroke-linejoin="round"/><path d="M30.72 87.8101C30.59 87.7401 30.4501 87.6901 30.3101 87.6501H30.3001C30.0201 87.5501 29.7202 87.5101 29.4002 87.5101H29.3902C29.2902 87.5101 29.2001 87.5101 29.0901 87.5201C27.8901 87.6201 26.7201 88.2601 25.6001 89.4601C24.2401 90.9001 23.3001 92.4701 22.7701 94.2001C22.2501 95.9301 22.2701 97.2701 22.8301 98.2401C23.5101 99.5301 24.2902 100.61 25.1502 101.5C25.8202 102.19 26.5401 102.75 27.3101 103.19L24.6902 101.89L18.9502 99.0201L7.98002 93.5401L7.55009 93.3301C5.68009 92.3301 4.11012 90.6401 2.83012 88.2401C2.27012 87.2701 2.25006 85.9301 2.77006 84.2001C3.30006 82.4701 4.24014 80.9001 5.60014 79.4601C6.72014 78.2601 7.89013 77.6201 9.09013 77.5201C9.64013 77.4701 10.1401 77.5501 10.5701 77.7501L19.26 82.0801H19.2701L19.5701 82.2301L30.72 87.8101Z" stroke="#0B0B0F" stroke-linejoin="round"/></svg>"""
 
-# ==========================================
-# 1. KONFIGURASI HALAMAN & CSS (STYLING)
-# ==========================================
 st.set_page_config(
     page_title="Dashboard Ketenagakerjaan Indonesia",
     page_icon=chartsvg,
@@ -18,7 +15,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# CSS Custom untuk Tampilan "Card" yang Elegan
 st.markdown("""
     <style>
         /* Memaksa background aplikasi */
@@ -61,12 +57,8 @@ st.markdown("""
 st.title("Dashboard Ketenagakerjaan Indonesia")
 st.markdown("Sumber Data: https://www.bps.go.id/id/statistics-table?subject=520")
 
-# ==========================================
-# 2. LOAD DATA
-# ==========================================
 @st.cache_data
 def load_data():
-    # Load Data Makro
     try:
         df_makro = pd.read_csv("clean_persentaseBekerjaPengangguran.csv")
         df_makro = df_makro.rename(columns={'Status': 'Tahun', 'Tahun': 'Bulan', 'Periode': 'Persentase', 'Jumlah_Orang': 'Jumlah'})
@@ -75,7 +67,6 @@ def load_data():
         df_makro = df_makro[df_makro['Bulan'] != 'Tahunan']
     except: df_makro = pd.DataFrame()
 
-    # Load Data Umur
     try:
         df_umur = pd.read_csv("clean_kelompokUmurPengangguran.csv")
         df_umur['TPT'] = pd.to_numeric(df_umur['TPT'], errors='coerce') 
@@ -84,7 +75,6 @@ def load_data():
         df_umur['Tahun_Real'] = df_umur['Tahun'].map(mapping_tahun)
     except: df_umur = pd.DataFrame()
 
-    # Load Data Lapangan Usaha
     try:
         df_lapangan = pd.read_csv("clean_RataRataLapangan.csv")
         df_lapangan.columns = ['Provinsi', 'Pertanian', 'Industri', 'Jasa', 'Total', 'Tahun']
@@ -93,7 +83,6 @@ def load_data():
         df_lapangan = df_lapangan.dropna(subset=['Total', 'Pertanian', 'Industri'])
     except: df_lapangan = pd.DataFrame()
 
-    # Load Data Pendidikan
     try:
         df_pendidikan = pd.read_csv("clean_RataRataPendidikan.csv")
         df_pendidikan.columns = ['Provinsi', 'Tidak_Sekolah', 'SD', 'SMP', 'SMA_Keatas', 'Total', 'Tahun']
@@ -107,9 +96,6 @@ def load_data():
 df_makro, df_umur, df_lapangan, df_pendidikan = load_data()
 
 
-# ==========================================
-# BARIS 1: TINJAUAN MAKRO EKONOMI (METRIK)
-# ==========================================
 with st.container(border=True):
     col_h1, col_f1 = st.columns([3, 1], vertical_alignment="center")
     with col_h1:
@@ -134,15 +120,11 @@ with st.container(border=True):
         m3.metric("Status Data", f"Tahun {filter_tahun_makro}", "Data Tahunan")
 
 
-# ==========================================
-# BARIS 2: INFORMASI PENGANGGURAN (2 KOLOM)
-# ==========================================
 with st.container(border=True):
     st.markdown(f"### {peoplesvg} Analisis Pengangguran", unsafe_allow_html=True)
     
     col_trend, col_age = st.columns(2)
 
-    # --- KOLOM 1: TREN PENGANGGURAN ---
     with col_trend:
         st.subheader("**Tren Tingkat Pengangguran**")
         if not df_makro.empty:
@@ -155,7 +137,6 @@ with st.container(border=True):
             fig_trend = px.line(df_trend, x='Waktu', y='Persentase', markers=True)
             fig_trend.update_traces(line_color='#FF4B4B', line_width=3, marker_size=8)
             
-            # Anotasi & Garis Referensi
             fig_trend.add_annotation(
                 x=peak_label, y=peak_covid, text="Puncak COVID-19",
                 showarrow=True, arrowhead=2, ax=0, ay=-30,
@@ -165,9 +146,7 @@ with st.container(border=True):
             fig_trend.update_layout(height=435, margin=dict(l=20, r=20, t=10, b=10))
             st.plotly_chart(fig_trend, use_container_width=True)
 
-    # --- KOLOM 2: DISTRIBUSI UMUR ---
     with col_age:
-        # Filter khusus untuk chart umur diletakkan di dalam kolomnya agar rapi
         st.subheader(f"**Distribusi Umur**")
         opts_tahun = sorted(df_umur['Tahun_Real'].dropna().unique(), reverse=True) if not df_umur.empty else [2023]
         filter_tahun_demo = st.selectbox("Tahun:", opts_tahun, key="sel_demo_age")
@@ -185,19 +164,14 @@ with st.container(border=True):
                 st.plotly_chart(fig_age, use_container_width=True)
 
 
-# ==========================================
-# BARIS 3: SISA INFORMASI (PENDIDIKAN & SEKTOR)
-# ==========================================
 with st.container(border=True):
     st.markdown(f"### {moneysvg} Analisis Upah Berdasarkan Pendidikan dan Sektoral", unsafe_allow_html=True)
     
     col_edu, col_sect = st.columns(2)
 
-    # --- KOLOM 1: GAP PENDIDIKAN ---
     with col_edu:
         st.subheader("**Gap Upah Berdasarkan Pendidikan**")
         
-        # Filter Pendidikan
         edu_labels = {'Tidak_Sekolah': 'Tidak Sekolah', 'SD': 'SD', 'SMP': 'SMP', 'SMA_Keatas': 'SMA+'}
         ce1, ce2 = st.columns(2)
         with ce1:
@@ -206,10 +180,9 @@ with st.container(border=True):
             edu_2 = st.selectbox("Pendidikan 2:", list(edu_labels.keys()), index=3, format_func=lambda x: edu_labels[x], key="e2")
 
         if not df_pendidikan.empty:
-            # Gunakan tahun dari filter demografi di atas atau default 2023
             df_edu = df_pendidikan[df_pendidikan['Tahun'] == filter_tahun_demo].copy()
             
-            # Multiselect Provinsi
+            
             with st.expander("Filter Provinsi", expanded=False):
                 all_provs = sorted(df_edu['Provinsi'].unique().tolist())
                 sel_provs = st.multiselect("Pilih:", all_provs, default=all_provs[:10], key="ms_prov")
@@ -218,81 +191,66 @@ with st.container(border=True):
                 target_provs = sel_provs if sel_provs else all_provs
                 df_viz = df_edu[df_edu['Provinsi'].isin(target_provs)].copy()
                 
-                # --- PERUBAHAN 1: KONVERSI NILAI KE JUTA RUPIAH ---
-                # Kita bagi nilai asli dengan 1 juta agar Plotly menganggapnya angka kecil (misal: 2.5 bukan 2,500,000)
                 df_viz[edu_1] = df_viz[edu_1] / 1_000_000
                 df_viz[edu_2] = df_viz[edu_2] / 1_000_000
-                # --------------------------------------------------
 
                 df_viz['Gap'] = df_viz[edu_2] - df_viz[edu_1]
                 df_viz = df_viz.sort_values('Gap')
 
                 fig_gap = go.Figure()
                 
-                # Garis (Dumbbell line)
                 for i in range(len(df_viz)):
                     fig_gap.add_shape(type='line',
                                     x0=df_viz.iloc[i][edu_1], y0=df_viz.iloc[i]['Provinsi'],
                                     x1=df_viz.iloc[i][edu_2], y1=df_viz.iloc[i]['Provinsi'],
                                     line=dict(color='lightgrey', width=2))
                 
-                # Marker (Titik)
-                # Kita tambahkan hovertemplate agar saat ditunjuk muncul angka "2.5 Jt"
                 fig_gap.add_trace(go.Scatter(
                     x=df_viz[edu_1], y=df_viz['Provinsi'], 
                     mode='markers', name=edu_labels[edu_1], 
                     marker=dict(color="#FF0000", size=8),
-                    hovertemplate='%{x:.2f} Jt<extra></extra>' # Format hover
+                    hovertemplate='%{x:.2f} Jt<extra></extra>' 
                 ))
                 fig_gap.add_trace(go.Scatter(
                     x=df_viz[edu_2], y=df_viz['Provinsi'], 
                     mode='markers', name=edu_labels[edu_2], 
                     marker=dict(color="#FFAE00", size=8),
-                    hovertemplate='%{x:.2f} Jt<extra></extra>' # Format hover
+                    hovertemplate='%{x:.2f} Jt<extra></extra>' 
                 ))
                 
                 h_dynamic = max(350, len(df_viz) * 25)
                 
-                # --- PERUBAHAN 2: UPDATE LAYOUT SUMBU X ---
                 fig_gap.update_layout(
                     height=h_dynamic, 
                     margin=dict(l=0,r=0,t=10,b=0), 
                     legend=dict(orientation="h", y=1.1),
                     xaxis=dict(
-                        ticksuffix=" Jt",  # Menambahkan tulisan " Jt" di belakang angka
-                        tickformat=".1f"   # Menampilkan 1 angka di belakang koma (Opsional)
+                        ticksuffix=" Jt", 
+                        tickformat=".1f"  
                     )
                 )
-                # ------------------------------------------
                 
                 st.plotly_chart(fig_gap, use_container_width=True)
 
     with col_sect:
         st.subheader("**Perbandingan Upah Berdasarkan Sektor**")
         
-        # Penataan Filter di dalam kolom sektoral
         c_sec_f1, c_sec_f2 = st.columns(2)
         with c_sec_f1:
             prov_list = sorted(df_lapangan['Provinsi'].unique()) if not df_lapangan.empty else []
             filter_prov = st.selectbox("Wilayah:", ["Semua Provinsi (Top 10)"] + prov_list, key="sel_prov_sect")
         with c_sec_f2:
-            # Pilihan sektor yang tersedia
             sektor_options = ['Pertanian', 'Industri', 'Jasa']
             filter_sektor = st.selectbox("Sektor Utama:", sektor_options, index=1, key="sel_sektor_val")
 
         if not df_lapangan.empty:
-            # Gunakan data tahun terbaru (2023)
             df_sect = df_lapangan[df_lapangan['Tahun'] == 2023].copy()
 
-            # --- PERUBAHAN 1: KONVERSI KE JUTA RUPIAH ---
-            # Kita konversi semua kolom sektor ke satuan Juta agar konsisten
             for col in sektor_options:
                 if col in df_sect.columns:
                     df_sect[col] = df_sect[col] / 1_000_000
-            # ---------------------------------------------
 
             if filter_prov == "Semua Provinsi (Top 10)":
-                # Menampilkan 10 Provinsi tertinggi berdasarkan sektor yang dipilih
                 df_show = df_sect.sort_values(filter_sektor, ascending=False).head(10)
                 
                 fig_sect = px.bar(
@@ -306,16 +264,13 @@ with st.container(border=True):
                     labels={filter_sektor: 'Rata-rata Upah (Juta Rp)'}
                 )
                 
-                # --- PERUBAHAN 2: FORMAT SUMBU X (HORIZONTAL) ---
                 fig_sect.update_layout(
-                    xaxis=dict(ticksuffix=" Jt", tickformat=".1f"), # Tambah suffix Jt
+                    xaxis=dict(ticksuffix=" Jt", tickformat=".1f"), 
                     yaxis=dict(autorange="reversed")
                 )
-                # Format Hover
                 fig_sect.update_traces(hovertemplate='%{x:.2f} Jt<extra></extra>')
                 
             else:
-                # Menampilkan perbandingan semua sektor di provinsi tertentu
                 df_prov_only = df_sect[df_sect['Provinsi'] == filter_prov]
                 df_melt = df_prov_only.melt(
                     id_vars=['Provinsi'], 
@@ -324,7 +279,6 @@ with st.container(border=True):
                     value_name='Upah'
                 )
                 
-                # Highlight sektor yang dipilih di filter
                 colors = ['#FF4B4B' if s == filter_sektor else '#D3D3D3' for s in df_melt['Sektor']]
                 
                 fig_sect = px.bar(
@@ -332,19 +286,16 @@ with st.container(border=True):
                     x='Sektor', 
                     y='Upah',
                     title=f"Perbandingan Upah di {filter_prov}",
-                    # text_auto='.2s' # Kita ganti text_auto dengan texttemplate agar bisa custom "Jt"
                 )
                 
-                # --- PERUBAHAN 3: FORMAT TEXT & HOVER ---
                 fig_sect.update_traces(
                     marker_color=colors,
-                    texttemplate='%{y:.2f} Jt', # Menampilkan teks "2.50 Jt" di atas batang
+                    texttemplate='%{y:.2f} Jt',
                     hovertemplate='%{y:.2f} Jt<extra></extra>'
                 )
                 
-                # --- PERUBAHAN 4: FORMAT SUMBU Y (VERTIKAL) ---
                 fig_sect.update_layout(
-                    yaxis=dict(ticksuffix=" Jt", tickformat=".1f") # Tambah suffix Jt di sumbu Y
+                    yaxis=dict(ticksuffix=" Jt", tickformat=".1f") 
                 )
             
             fig_sect.update_layout(height=412, margin=dict(l=0, r=0, t=40, b=0))
